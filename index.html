@@ -38,8 +38,8 @@
             var month = d.getMonth();
             var day = d.getDay();
             var hour = d.getHours();
-	    if (month === 3 && day < 28) {
-		document.getElementById('plaatje').innerHTML = "<img src='img/meme.png'><h2>mark en hugo pls</h2> <br> <iframe src=\"https://free.timeanddate.com/countdown/i7rvtpux/n338/cf100/cm0/cu4/ct0/cs1/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatfijnmazige%20versoepelingen/tac000/tpc000/mac000/mpc000/iso2021-04-28T17:00:00\" allowtransparency=\"true\" frameborder=\"0\" width=\"320\" height=\"135\"></iframe>"
+	    if (month === 3 && day < 28 && hour <= 16) {
+		document.getElementById('plaatje').innerHTML = "<img src='img/meme.png'><h2>mark en hugo pls</h2> <br> <iframe src=\"https://free.timeanddate.com/countdown/i7rvtpux/n338/cf100/cm0/cu4/ct0/cs1/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatfijnmazige%20versoepelingen/tac000/tpc000/mac000/mpc000/iso2021-04-28T17:00:00\" allowtransparency=\"true\" frameborder=\"0\" width=\"640\" height=\"270\"></iframe>"
 	    } else {
 		if (day === 5 && hour >= 16) {
 		    document.getElementById('plaatje').innerHTML = "<img src='img/ja.jpg'><h2>Vergadering in WB.00.001! Proost!</h2>"
