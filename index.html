@@ -37,17 +37,12 @@
             var month = d.getMonth();
             var day = d.getDay();
             var hour = d.getHours();
-            /**/
-            if (month === 2) { //Corona time
-                document.getElementById('plaatje').innerHTML = "<img src='img/corona.jpg'><h2>Vergadering verplaatst naar Teams. Proost!</h2>"
-            } else { //No corona time
-                if (day === 5 && hour >= 16) {
-                    document.getElementById('plaatje').innerHTML = "<img src='img/ja.jpg'><h2>Vergadering in WB.00.001! Proost!</h2>"
-                } else if (day === 6 || day === 0) {
-                    document.getElementById('plaatje').innerHTML = "<iframe width=\"700\" height=\"394\" src=\"https://www.youtube.com/embed/vH03cmVPCSM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><h2>Het is weekend! Doorzuipen!</h2>"
-                } else {
-                    document.getElementById('plaatje').innerHTML = "<img src='img/nee.jpg'/><h2>Iets te enthousiast. Doorwerken!</h2>"
-                }
+            if (day === 5 && hour >= 16) {
+                document.getElementById('plaatje').innerHTML = "<img src='img/ja.jpg'><h2>Vergadering in WB.00.001! Proost!</h2>"
+            } else if (day === 6 || day === 0) {
+                document.getElementById('plaatje').innerHTML = "<iframe width=\"700\" height=\"394\" src=\"https://www.youtube.com/embed/vH03cmVPCSM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><h2>Het is weekend! Doorzuipen!</h2>"
+            } else {
+                document.getElementById('plaatje').innerHTML = "<img src='img/nee.jpg'/><h2>Iets te enthousiast. Doorwerken!</h2>"
             }
         </script>
     </body>
