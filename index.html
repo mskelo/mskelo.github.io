@@ -38,7 +38,7 @@
         var month = d.getMonth();
         var day = d.getDay();
         var hour = d.getHours();
-		if (day === 5 && hour >= 16) {
+		if ((day === 5 && hour >= 16) || (day === 2 && hour >= 16)) {
 			document.getElementById('plaatje').innerHTML = "<img src='img/ja.jpg'><h2>Vergadering in WB.00.001! Proost!</h2>"
 		} 
 		else if (day === 6 || day === 0) {
